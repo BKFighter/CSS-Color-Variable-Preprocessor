@@ -7,7 +7,7 @@ var ccvCSS;
 
 function process(url, main, secondary){
   
-  xlhttp=new XMLHttpRequest();
+  xmlhttp=new XMLHttpRequest();
   xmlhttp.open("GET", url, false);
   xmlhttp.send();
   ccvCSS = xmlhttp.responseText;
