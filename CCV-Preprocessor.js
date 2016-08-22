@@ -1,10 +1,10 @@
-var css;
+var ccvCSS;
 
 function process(url, main, secondary){
   
   mlhttp=new XMLHttpRequest();
-  xmlhttp.open("GET", "/v1/data?format=json", false);
+  xmlhttp.open("GET", url, false);
   xmlhttp.send();
-  css = xmlhttp.responseText;
+  ccvCSS = xmlhttp.responseText;
   
 }
