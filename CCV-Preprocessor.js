@@ -2,8 +2,9 @@ var ccvCSS;
 
 //For main color use "+main+" (including quotation marks). MAKE SURE TO USE ", not '.
 //For secondary color use "+secondary+" (including quotation marks). MAKE SURE TO USE ", not '.
-//DON'T surround the text in the file given with a ' or a "
-//DO use ONLY the .txt format
+//DON'T surround the text in the file given with a ' or a " .
+//DO use ONLY the .txt format.
+//Files you want to use MUST be from the same repository as the page you want to use this on.
 
 function process(url, main, secondary){
   
