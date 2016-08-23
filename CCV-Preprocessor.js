@@ -9,17 +9,23 @@ var ccvCSS;
 function process(url, main, secondary){
   
   xmlhttp=new XMLHttpRequest();
-  xmlhttp.open("GET", url, false);
+  xmlhttp.open("GET", url, true);
   xmlhttp.send();
-  ccvCSS = xmlhttp.responseText.toString();
   
-  //Provided by @Herohamp vvv
-  var newStyle = document.createElement('style');
-  newStyle.setAttribute('type', 'text/css');
-
-  newStyle.textContent = ccvCSS;
-
-  document.getElementsByTagName('head')[0].appendChild(newStyle);
-//Provided by @Herohamp ^^^
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      
+    ccvCSS = xmlhttp.responseText.toString();
+    
+    //Provided by @Herohamp vvv
+    var newStyle = document.createElement('style');
+    newStyle.setAttribute('type', 'text/css');
+  
+    newStyle.textContent = ccvCSS;
+  
+    document.getElementsByTagName('head')[0].appendChild(newStyle);
+  //Provided by @Herohamp ^^^
+    }
+  };
   
 }
