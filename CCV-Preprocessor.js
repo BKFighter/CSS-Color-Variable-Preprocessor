@@ -16,7 +16,7 @@ function process(url, main, secondary){
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       
-    ccvCSS = xmlhttp.responseText;
+    ccvCSS = '"'+xmlhttp.responseText+'"';
     console.log(ccvCSS);
     
     //Provided by @Herohamp vvv
