@@ -7,7 +7,7 @@ var ccvCSS;
 //Files you want to use MUST be from the same repository as the page you want to use this on. Exception to this are things like raw.githubusercontent, etc.
 
 function process(url, main, secondary){
-  console.log("started");
+  console.log("started"+main);
   
   xmlhttp=new XMLHttpRequest();
   xmlhttp.open("GET", url, true);
@@ -18,7 +18,9 @@ function process(url, main, secondary){
       
     var ppCSS = xmlhttp.responseText.replace(/\s+/g, ' ');
     console.log(ppCSS);
-    ccvCSS = ppCSS;
+    var pCSS = '"'+ppCSS+'"';
+    console.log(pCSS);
+    ccvCSS = eval(pCSS);
     console.log(ccvCSS);
     
     //Provided by @Herohamp vvv
