@@ -16,6 +16,7 @@ function process(url, main, secondary){
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       
     ccvCSS = xmlhttp.responseText.toString();
+    console.log(ccvCSS);
     
     //Provided by @Herohamp vvv
     var newStyle = document.createElement('style');
@@ -24,6 +25,7 @@ function process(url, main, secondary){
     newStyle.textContent = ccvCSS;
   
     document.getElementsByTagName('head')[0].appendChild(newStyle);
+    console.log(ocument.getElementsByTagName('head'));
   //Provided by @Herohamp ^^^
     }
   };
