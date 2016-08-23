@@ -8,6 +8,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro:300" rel="stylesheet">
     
+    <script src="https://raw.githubusercontent.com/BKFighter/CSS-Color-Variable-Preprocessor/gh-pages/CCV-Preprocessor.js">
+    
     <style>
       
       h1{
@@ -74,7 +76,7 @@
     <h2>What is CCV?</h2>
     <p>CCV (CSS Color Variable Preprocessor) is a preprocessor that allows you to make a regular css template but be able to change the colors to fit different projects. Instead of manually changing every color, you can use CCV to pick a different main and secondary color while loading the page.</p>
     <h2>Want a demo?</h2>
-    <button>Click here for Demo.</button>
+    <button onclick="clicked();">Click here for Demo.</button>
     <h2>How can I use this?</h2>
     <p>Easy! Four steps are required.</p>
     <p><b>1.</b> When creating your css document, use the file extension .ppcss, to ensure that it is not treatd like a regular css file, but so that the user is aware of its purpose.</p>
@@ -86,6 +88,17 @@
     
     <br />
     <p class="footer">© 2016 <a href="https://github.com/BKFighter">BKFighter</a> & <a href="https://github.com/Herohamp">Herohamp</a> | <a href="https://github.com/BKFighter/CSS-Color-Variable-Preprocessor">Repository on GitHub</a></p>
+  
+  <script>
+  function clicked(){
+    
+    var color = prompt("Enter a color, and we will run the scripts to change the background-color.", "#123456");
+    process("https://raw.githubusercontent.com/BKFighter/CSS-Color-Variable-Preprocessor/gh-pages/demo/Demo-CSS.ppcss",color,#123456);
+    
+  }
+  </script>
+  
+  
   </body>
   
   
