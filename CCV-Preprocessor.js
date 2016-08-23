@@ -17,6 +17,7 @@ function process(url, main, secondary){
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       
     var ppCSS = xmlhttp.responseText.replace(/\s+/g, ' ');
+    console.log(ppCSS);
     ccvCSS = ppCSS;
     console.log(ccvCSS);
     
