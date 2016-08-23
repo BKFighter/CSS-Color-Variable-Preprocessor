@@ -7,6 +7,7 @@ var ccvCSS;
 //Files you want to use MUST be from the same repository as the page you want to use this on. Exception to this are things like raw.githubusercontent, etc.
 
 function process(url, main, secondary){
+  console.log("started");
   
   xmlhttp=new XMLHttpRequest();
   xmlhttp.open("GET", url, true);
@@ -25,7 +26,7 @@ function process(url, main, secondary){
     newStyle.textContent = ccvCSS;
   
     document.getElementsByTagName('head')[0].appendChild(newStyle);
-    console.log(ocument.getElementsByTagName('head'));
+    console.log(document.getElementsByTagName('head'));
   //Provided by @Herohamp ^^^
     }
   };
